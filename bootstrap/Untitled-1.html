@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guitar List</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 50px;
+			padding-bottom:50px;
+		}
+		body {
+			background-color: #F7FFFC;
+		}
+		.carousel {
+			height: 705px;
+			background-color: #F7FFFC;
+			margin-bottom: 60px;
+		}
+		.carousel .item {
+			height: 705px;
+			background-color: #F7FFFC;
+		}
+		.carousel img {
+			width: 100%;
+		}
+		.carousel-caption p {
+			margin-bottom: 20px;
+			font-size: 20px;
+			line-height: 1.8;
+		}
+		#summary-container .col-md-3 {
+			text-align: center;
+		}
+		.feature{
+			padding-top:20px;
+		}
+	</style>
+	</head>
+
+	<body>
+
+<!--navbar part-->
+<nav class="navbar navbar-default navbar-fixed-top container-fluid navbar-inverse">
+      <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="demo-navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#">Guitar List</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse pull-right" id="demo-navbar">
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Overview<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Simple</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Feature<span class="caret"></span></a>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#tab-Fender">Fender</a></li>
+            <li><a href="#tab-Gibson">Gibson</a></li>
+          </ul>
+            </li>
+        <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+      </ul>
+        </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+      <!-- /.container-fluid --> 
+    </nav>
+
+<!--Carousel Part-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  	<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+  	<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+  </ol>
+      <div class="carousel-inner" role="listbox">
+    <div class="item active"> <img src="fgt/st2.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Stratocaster.</p>
+      </div>
+        </div>
+    <div class="item"> <img src="fgt/tl2.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Telecaster.Cast your fury.</p>
+      </div>
+        </div>
+    <div class="item"> <img src="fgt/st1.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Stratocaster.</p>
+      </div>
+        </div>
+    <div class="item"> <img src="fgt/jm2.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Jazzmaster.</p>
+      </div>
+        </div>
+    <div class="item"> <img src="fgt/lp2.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Les Paul.</p>
+      </div>
+        </div>
+    <div class="item"> <img src="fgt/sg3.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>SG.</p>
+      </div>
+        </div>
+ 	<div class="item"> <img src="fgt/mg2.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>MUSTang.</p>
+      </div>
+        </div>
+	<div class="item"> <img src="fgt/jg3.jpg" alt="...">
+          <div class="carousel-caption">
+        <p>Jaguar.</p>
+      </div>
+        </div>
+  </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a> </div>
+
+
+<!--Thumbnail-->
+<div class="container" id="summary-container">
+      <div class="row">
+    <div class="col-md-6" id="fender"> <img class="img-responsive" src="fgt/f2.jpg" alt="..." style="width:20%">
+          <div class="caption">
+        <p>Since 1946, Fender's iconic Stratocasters, Telecasters and Precision & Jazz bass guitars have transformed nearly every music genre.</p>
+        <p><a href="https://www.fender.com/" class="btn btn-default" role="button">Offical Webside</a> </p>
+      </div>
+        </div>
+    <div class="col-md-6" id="gibson"> <img class="img-responsive" src="fgt/g1.jpg" alt="..." style="width:20%">
+          <div class="caption">
+        <p>Gibson Brands, Inc., the world's premier manufacturer of musical instruments and professional audio equipment. </p>
+        <p><a href="https://www.gibson.com/" class="btn btn-default" role="button">Offical Webside</a> </p>
+      </div>
+        </div>
+  </div>
+     
+      <hr class="devider" style="padding:20px 0">
+    </div>
+
+<!--Tab-->
+<script type="text/javascript">
+		 $(function() { $("[data-toggle='popover']").popover({ html : true }); })
+</script>
+<div class="container">
+  <ul class="nav nav-tabs" role="tablist" id="tab-list">
+    <li role="presentation" class="active"><a href="#tab-Fender" role="tab" data-toggle="tab">Fender</a></li>
+    <li role="presentation"><a href="#tab-Gibson" role="tab" data-toggle="tab">Gibson</a></li>
+  </ul>
+      <div class="tab-content">
+    <div class="tab-pane active" id="tab-Fender">
+	  <div class="row feature">
+        <div class="col-md-7">
+              <p><strong>Fender Musical Instruments Corporation </strong>(FMIC), commonly referred to simply as <strong>Fender</strong>, is an American manufacturer of stringed instruments and amplifiers. It is known for its solid-body electric guitars and bass guitars, such as the Stratocaster (also known as the "Strat"), Telecaster (also known as the "Tele"), Precision Bass (also known as the "P-Bass"), and the Jazz Bass (also known as the "J-Bass"). Its headquarters are in Scottsdale, Arizona. The company, previously named the <strong>Fender Electric Instrument Manufacturing Company</strong>, was founded in Fullerton, California, by Clarence Leonidas "Leo" Fender in 1946.</p>
+            </div>
+        <div class="col-md-5" style="margin-top:20px"> <img src="fgt/f1.png" style="width:50%"> </div>
+      </div>
+      <ul class="nav nav-pills" role="tablist">
+		  <li role="presentation" class="active"><a href="#tab-Telecaster" role="tab" data-toggle="tab">Telecaster</a></li>
+		  <li role="presentation"><a href="#tab-Stratocaster" role="tab" data-toggle="tab">Stratocaster</a></li>
+		  <li role="presentation"><a href="#tab-Mustang" role="tab" data-toggle="tab">Mustang</a></li>
+		  <li role="presentation"><a href="#tab-Jazzmaster" role="tab" data-toggle="tab">Jazzmaster</a></li>
+		  <li role="presentation"><a href="#tab-Jaguar" role="tab" data-toggle="tab">Jaguar</a></li>
+	  </ul>
+	  <div class="tab-content">
+		  <div class="tab-pane active" id="tab-Telecaster">
+			<div class="row feature">
+				<div class="col-md-7">
+					<p>The <strong>Fender Telecaster</strong>, colloquially known as the <strong>Tele</strong> /ˈtɛli/, is the world's first commercially successful solid-body electric guitar. Its simple yet effective design and revolutionary sound broke ground and set trends in electric guitar manufacturing and popular music. Introduced for national distribution as the <strong>Broadcaster</strong> in the autumn of 1950, it was the first guitar of its kind manufactured on a substantial scale and has been in continuous production in one form or another since its first incarnation.</p>
+				</div>
+				<div class="col-md-5"><img src="fgt/tll.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+
+		   <div class="tab-pane" id="tab-Stratocaster">
+			<div class="row feature">
+				<div class="col-md-7">
+					<p>The <strong>Fender Stratocaster</strong> is a model of electric guitar designed in 1954 by Leo Fender, Bill Carson, George Fullerton, and Freddie Tavares. The Fender Musical Instruments Corporation has continuously manufactured the Stratocaster from 1954 to the present. It is a double-cutaway guitar, with an extended top "horn" shape for balance. Along with the Gibson Les Paul, it is one of the most often emulated electric guitar shapes."Stratocaster" and "Strat" are trademark terms belonging to Fender.<blockquote></blockquote>
+					The Stratocaster is a versatile guitar, usable for most styles of music and has been used in many genres, including country, rock, pop, folk, soul, rhythm and blues, blues, jazz, punk, and heavy metal.</p>
+				</div>
+				<div class="col-md-5"><img src="fgt/stl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-Mustang">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Fender Mustang</strong> is a solid body electric guitar produced by the Fender Musical Instruments Corporation. It was introduced in 1964 as the basis of a major redesign of Fender's student models, the Musicmaster and Duo-Sonic. It was produced until 1982 and reissued in 1990.
+
+					In the 1990s, the Mustang attained cult status largely as a result of its use by a number of alternative rock bands. Early examples are generally seen as the most collectible of all the short-scale Fender guitars.
+
+					The Mustang features two single-coil pickups—an unusual pickup switching configuration—and a unique tremolo system. It was originally available in two scale lengths.
+				</div>
+				<div class="col-md-5"><img src="fgt/mtl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-Jazzmaster">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Fender Jazzmaster</strong> is an electric guitar designed as a more expensive sibling to the Fender Stratocaster. First introduced at the 1958 NAMM Show, it was initially marketed to jazz guitarists, but found favor among surf rock guitarists in the early 1960s. Its appearance is similar to the Jaguar, though it is tonally and physically different in many technical ways.
+				</div>
+				<div class="col-md-5"><img src="fgt/jzl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-Jaguar">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Fender Jaguar</strong> is an electric guitar by Fender Musical Instruments characterized by an offset-waist body, a relatively unusual switching system with two separate circuits for lead and rhythm, and a medium-scale 24" neck. Owing some roots to the Jazzmaster, it was introduced in 1962 as Fender's feature-laden top-of-the-line model, designed to lure players from Gibson. During its initial 13-year production run, the Jaguar did not sell as well as the less expensive Stratocaster and Telecaster, and achieved its most noticeable popularity in the surf music scene. After the Jaguar was taken out of production in 1975, vintage Jaguars became popular first with punk rock players, and then more so during the alternative rock and indie rock movements of the 1980s and 90s. Fender began making a version in Japan in the mid-1980s, and then introduced a USA-made reissue in 1999. Since then, Fender has made a variety of Jaguars in America, Mexico, and China under both the Fender and Squier labels. Original vintage Jaguars sell for many times their original price.
+				</div>
+				<div class="col-md-5"><img src="fgt/jgl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+	  </div>
+	</div>
+   
+   
+    <div class="tab-pane" id="tab-Gibson">
+	  <div class="row feature">
+        <div class="col-md-7" style="margin-top:20px">
+              <p><strong>Gibson Brands, Inc. </strong>(formerly <strong>Gibson Guitar Corp</strong>.) is an American manufacturer of guitars, other musical instruments, and consumer and professional electronics now based in Nashville, Tennessee. The company was formerly known as Gibson Guitar Corp. and renamed Gibson Brands, Inc. on June 11, 2013</p>
+		</div>
+        <div class="col-md-5"> <img src="fgt/g1.png" style="width:50%"> </div>     
+      </div>
+      <ul class="nav nav-pills" role="tablist">
+		  <li role="presentation" class="active"><a href="#tab-LP" role="tab" data-toggle="tab">Les Paul</a></li>
+		  <li role="presentation"><a href="#tab-SG" role="tab" data-toggle="tab">SG</a></li>
+		  <li role="presentation"><a href="#tab-fly" role="tab" data-toggle="tab">Flying V</a></li>
+		  <li role="presentation"><a href="#tab-es" role="tab" data-toggle="tab">ES Series</a></li>
+	  </ul>
+		<div class="tab-content">
+			
+		   <div class="tab-pane avtive" id="tab-LP">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Gibson Les Paul</strong> is a solid body electric guitar that was first sold by the Gibson Guitar Corporation in 1952. The Les Paul was designed by Gibson president Ted McCarty, factory manager John Huis and their team, along with guitarist/inventor Les Paul.
+
+The Les Paul was originally offered with a gold finish and two P-90 pickups. In 1957, humbucking pickups were added, along with sunburst finishes in 1958. The sunburst 1958–1960 Les Paul – today one of the best-known electric guitar types in the world – was considered a failure, with low production and sales. For 1961, the Les Paul was redesigned into what is now known as the Gibson SG. This design continued as a separate guitar when the traditional single cutaway, carved top bodystyle was re-introduced in 1968. The Les Paul has been continually produced in countless versions and editions since. Along with Fender's Telecaster and Stratocaster, it was one of the first mass-produced electric solid-body guitars. Les Pauls have been used in many genres, including rock, country, pop, soul, rhythm and blues, blues, jazz, reggae, punk, and heavy metal.
+				</div>
+				<div class="col-md-5"><img src="fgt/lpl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-SG">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Gibson SG</strong>is a solid-body electric guitar model that was introduced in 1961 (as the Gibson Les Paul) by Gibson, and remains in production today with many variations on the initial design available. The SG Standard is Gibson's best-selling model of all time
+				</div>
+				<div class="col-md-5"><img src="fgt/sgl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-fly">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Gibson Flying V</strong>is an electric guitar model first released by Gibson in 1958. The Flying V offered a radical, "futuristic" body design, much like its siblings: the Explorer, which was released the same year and the Moderne, which was designed in 1957 but not released until 1982.
+				</div>
+				<div class="col-md-5"><img src="fgt/flyl.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		  
+		   <div class="tab-pane" id="tab-ES">
+			<div class="row feature">
+				<div class="col-md-7">
+					The <strong>Gibson ES series</strong> of semi-acoustic guitar (hollow body electric guitar) are manufactured by the Gibson Guitar Corporation. The letters ES stand for Electric Spanish, to distinguish them from Hawaiian-style guitars which were played flat on the lap.
+				</div>
+				<div class="col-md-5"><img src="fgt/es335.jpg" style="width:100%"></div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	
+  </div>
+  <hr class="devider" style="padding:20px 0">
+  <footer>
+  	<p class="pull-right"><a href="#top">↑Top</a></p>
+  	<p class="pull-right">2017 Erioo.</p>
+  </footer>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="about">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="colse pull-right" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">About Me</h4>
+			</div>
+			<div class="modal-body">
+				Contact:99824583@qq.com
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Got it.</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+    		$("#demo-navbar .dropdown-menu a").click(function(){
+
+    			var href = $(this).attr("href");
+
+    			$("#tab-list a[href='" + href + "']").tab("show");
+
+    		
+
+    		})
+
+    	})
+	</script>
+</body>
+</html>
